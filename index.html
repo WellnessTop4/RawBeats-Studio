@@ -1,41 +1,84 @@
 ```html
 <!DOCTYPE html>
-<html lang="da">
+<html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>RawBeats Studio</title>
+
+<title>RawBeats Studio | Free Gaming Beats</title>
+
+<meta name="description" content="Free beats for gaming videos, background music and creators. Listen free and support RawBeats Studio to unlock downloads.">
+
+<meta name="keywords" content="free beats,gaming beats,youtube beats,background music,instrumental beats,rawbeats studio">
+
+<meta name="author" content="RawBeats Studio">
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8036688230923764" crossorigin="anonymous"></script>
 
 <style>
+
 body{
 margin:0;
-font-family:Arial, sans-serif;
+font-family:Arial;
 background:#0f172a;
 color:white;
 }
 
 header{
-background:#111827;
-padding:40px;
+background:#020617;
+padding:50px;
 text-align:center;
-border-bottom:2px solid #06b6d4;
+border-bottom:3px solid #06b6d4;
 }
 
 h1{
 margin:0;
-font-size:40px;
+font-size:38px;
 }
 
 .subtitle{
 margin-top:10px;
-font-size:18px;
 color:#cbd5e1;
 }
 
 .container{
 max-width:1200px;
 margin:auto;
-padding:30px;
+padding:40px;
+}
+
+.search{
+margin:30px auto;
+text-align:center;
+}
+
+.search input{
+padding:12px;
+width:60%;
+max-width:400px;
+border-radius:6px;
+border:none;
+}
+
+.filters{
+text-align:center;
+margin-bottom:30px;
+}
+
+.filters button{
+margin:5px;
+padding:10px 16px;
+border:none;
+background:#1e293b;
+color:white;
+border-radius:6px;
+cursor:pointer;
+}
+
+.filters button:hover{
+background:#06b6d4;
 }
 
 .grid{
@@ -53,25 +96,25 @@ box-shadow:0 0 15px rgba(0,0,0,0.5);
 
 .card img{
 width:100%;
-border-radius:8px;
-margin-bottom:10px;
+border-radius:6px;
 }
 
 .card iframe{
 width:100%;
 height:180px;
 border:none;
-border-radius:8px;
+margin-top:10px;
+border-radius:6px;
 }
 
 .unlock{
 display:block;
 margin-top:12px;
-padding:12px;
+padding:10px;
 background:#06b6d4;
 color:white;
 text-align:center;
-border-radius:8px;
+border-radius:6px;
 text-decoration:none;
 font-weight:bold;
 }
@@ -80,17 +123,27 @@ font-weight:bold;
 background:#0891b2;
 }
 
-.notice{
+.section{
+max-width:900px;
+margin:60px auto;
+padding:30px;
+background:#1e293b;
+border-radius:10px;
+}
+
+.ads{
+max-width:900px;
+margin:40px auto;
+background:#1e293b;
+padding:20px;
+border-radius:10px;
 text-align:center;
-margin-top:40px;
-font-size:14px;
-color:#cbd5e1;
 }
 
 footer{
-margin-top:60px;
-padding:25px;
-background:#111827;
+margin-top:80px;
+padding:40px;
+background:#020617;
 text-align:center;
 }
 
@@ -99,176 +152,209 @@ color:#06b6d4;
 text-decoration:none;
 }
 
-.ads{
-margin:40px auto;
-max-width:1000px;
-background:#1e293b;
-padding:20px;
-border-radius:10px;
-text-align:center;
-}
 </style>
+
+<script>
+
+function searchBeats(){
+
+let input=document.getElementById("searchInput").value.toLowerCase();
+let cards=document.getElementsByClassName("card");
+
+for(let i=0;i<cards.length;i++){
+
+let text=cards[i].innerText.toLowerCase();
+
+if(text.includes(input)){
+cards[i].style.display="block";
+}else{
+cards[i].style.display="none";
+}
+
+}
+
+}
+
+function filter(category){
+
+let cards=document.getElementsByClassName("card");
+
+for(let i=0;i<cards.length;i++){
+
+if(category=="all"){
+cards[i].style.display="block";
+}else{
+
+if(cards[i].classList.contains(category)){
+cards[i].style.display="block";
+}else{
+cards[i].style.display="none";
+}
+
+}
+
+}
+
+}
+
+</script>
+
 </head>
 
 <body>
 
 <header>
+
 <h1>RawBeats Studio</h1>
+
 <div class="subtitle">
-Free original beats for gaming, videos, background music and creative projects.
-<br>
-Listen free. Unlock full rights and download for $1.
+
+Free beats for gaming videos, background music and creators.  
+Listen free – support $1 to unlock download rights.
+
 </div>
+
 </header>
 
 <div class="container">
 
+<div class="search">
+
+<input type="text" id="searchInput" onkeyup="searchBeats()" placeholder="Search beats...">
+
+</div>
+
+<div class="filters">
+
+<button onclick="filter('all')">All</button>
+<button onclick="filter('gaming')">Gaming</button>
+<button onclick="filter('chill')">Chill</button>
+<button onclick="filter('dark')">Dark</button>
+<button onclick="filter('rap')">Rap</button>
+
+</div>
+
 <div class="ads">
-Google AdSense area
+
+Google AdSense Ad Area
+
 </div>
 
 <div class="grid">
 
-<div class="card">
+<div class="card gaming">
+
 <img src="https://img.youtube.com/vi/vUmDUakqkCA/maxresdefault.jpg">
-<iframe src="https://www.youtube.com/embed/vUmDUakqkCA" allowfullscreen></iframe>
-<a class="unlock" href="https://www.paypal.com/paypalme/SynSkrift" target="_blank">Unlock & Download ($1)</a>
+
+<iframe src="https://www.youtube.com/embed/vUmDUakqkCA"></iframe>
+
+<a class="unlock" href="https://www.paypal.com/paypalme/SynSkrift">Unlock Download $1</a>
+
 </div>
 
-<div class="card">
+<div class="card dark">
+
 <img src="https://img.youtube.com/vi/nGn4DyIEqj4/maxresdefault.jpg">
-<iframe src="https://www.youtube.com/embed/nGn4DyIEqj4" allowfullscreen></iframe>
-<a class="unlock" href="https://www.paypal.com/paypalme/SynSkrift" target="_blank">Unlock & Download ($1)</a>
+
+<iframe src="https://www.youtube.com/embed/nGn4DyIEqj4"></iframe>
+
+<a class="unlock" href="https://www.paypal.com/paypalme/SynSkrift">Unlock Download $1</a>
+
 </div>
 
-<div class="card">
+<div class="card chill">
+
 <img src="https://img.youtube.com/vi/m6XNnmwW8yo/maxresdefault.jpg">
-<iframe src="https://www.youtube.com/embed/m6XNnmwW8yo" allowfullscreen></iframe>
-<a class="unlock" href="https://www.paypal.com/paypalme/SynSkrift" target="_blank">Unlock & Download ($1)</a>
+
+<iframe src="https://www.youtube.com/embed/m6XNnmwW8yo"></iframe>
+
+<a class="unlock" href="https://www.paypal.com/paypalme/SynSkrift">Unlock Download $1</a>
+
 </div>
 
-<div class="card">
+<div class="card rap">
+
 <img src="https://img.youtube.com/vi/yHhTT3VxOlI/maxresdefault.jpg">
-<iframe src="https://www.youtube.com/embed/yHhTT3VxOlI" allowfullscreen></iframe>
-<a class="unlock" href="https://www.paypal.com/paypalme/SynSkrift" target="_blank">Unlock & Download ($1)</a>
+
+<iframe src="https://www.youtube.com/embed/yHhTT3VxOlI"></iframe>
+
+<a class="unlock" href="https://www.paypal.com/paypalme/SynSkrift">Unlock Download $1</a>
+
 </div>
 
-<div class="card">
-<img src="https://img.youtube.com/vi/8Oi14DVCfy4/maxresdefault.jpg">
-<iframe src="https://www.youtube.com/embed/8Oi14DVCfy4" allowfullscreen></iframe>
-<a class="unlock" href="https://www.paypal.com/paypalme/SynSkrift" target="_blank">Unlock & Download ($1)</a>
-</div>
-
-<div class="card">
-<img src="https://img.youtube.com/vi/JImaOmpc8Bw/maxresdefault.jpg">
-<iframe src="https://www.youtube.com/embed/JImaOmpc8Bw" allowfullscreen></iframe>
-<a class="unlock" href="https://www.paypal.com/paypalme/SynSkrift" target="_blank">Unlock & Download ($1)</a>
-</div>
-
-<div class="card">
-<img src="https://img.youtube.com/vi/PlnQWr0JBIM/maxresdefault.jpg">
-<iframe src="https://www.youtube.com/embed/PlnQWr0JBIM" allowfullscreen></iframe>
-<a class="unlock" href="https://www.paypal.com/paypalme/SynSkrift" target="_blank">Unlock & Download ($1)</a>
-</div>
-
-<div class="card">
-<img src="https://img.youtube.com/vi/daOTdlyu48Q/maxresdefault.jpg">
-<iframe src="https://www.youtube.com/embed/daOTdlyu48Q" allowfullscreen></iframe>
-<a class="unlock" href="https://www.paypal.com/paypalme/SynSkrift" target="_blank">Unlock & Download ($1)</a>
-</div>
-
-<div class="card">
-<img src="https://img.youtube.com/vi/gKi7o0e5AWs/maxresdefault.jpg">
-<iframe src="https://www.youtube.com/embed/gKi7o0e5AWs" allowfullscreen></iframe>
-<a class="unlock" href="https://www.paypal.com/paypalme/SynSkrift" target="_blank">Unlock & Download ($1)</a>
-</div>
-
-<div class="card">
-<img src="https://img.youtube.com/vi/c0y7GM7qods/maxresdefault.jpg">
-<iframe src="https://www.youtube.com/embed/c0y7GM7qods" allowfullscreen></iframe>
-<a class="unlock" href="https://www.paypal.com/paypalme/SynSkrift" target="_blank">Unlock & Download ($1)</a>
-</div>
-
-<div class="card">
-<img src="https://img.youtube.com/vi/jLbofWgv95g/maxresdefault.jpg">
-<iframe src="https://www.youtube.com/embed/jLbofWgv95g" allowfullscreen></iframe>
-<a class="unlock" href="https://www.paypal.com/paypalme/SynSkrift" target="_blank">Unlock & Download ($1)</a>
-</div>
-
-<div class="card">
-<img src="https://img.youtube.com/vi/FyUhLUKW4b0/maxresdefault.jpg">
-<iframe src="https://www.youtube.com/embed/FyUhLUKW4b0" allowfullscreen></iframe>
-<a class="unlock" href="https://www.paypal.com/paypalme/SynSkrift" target="_blank">Unlock & Download ($1)</a>
-</div>
-
-<div class="card">
-<img src="https://img.youtube.com/vi/kAHkvUpQlIA/maxresdefault.jpg">
-<iframe src="https://www.youtube.com/embed/kAHkvUpQlIA" allowfullscreen></iframe>
-<a class="unlock" href="https://www.paypal.com/paypalme/SynSkrift" target="_blank">Unlock & Download ($1)</a>
-</div>
-
-<div class="card">
-<img src="https://img.youtube.com/vi/7nSLvF9xkFA/maxresdefault.jpg">
-<iframe src="https://www.youtube.com/embed/7nSLvF9xkFA" allowfullscreen></iframe>
-<a class="unlock" href="https://www.paypal.com/paypalme/SynSkrift" target="_blank">Unlock & Download ($1)</a>
-</div>
-
-<div class="card">
-<img src="https://img.youtube.com/vi/PmwZAun1viA/maxresdefault.jpg">
-<iframe src="https://www.youtube.com/embed/PmwZAun1viA" allowfullscreen></iframe>
-<a class="unlock" href="https://www.paypal.com/paypalme/SynSkrift" target="_blank">Unlock & Download ($1)</a>
-</div>
-
-<div class="card">
-<img src="https://img.youtube.com/vi/1IL_pwM382M/maxresdefault.jpg">
-<iframe src="https://www.youtube.com/embed/1IL_pwM382M" allowfullscreen></iframe>
-<a class="unlock" href="https://www.paypal.com/paypalme/SynSkrift" target="_blank">Unlock & Download ($1)</a>
-</div>
-
-<div class="card">
-<img src="https://img.youtube.com/vi/lk2n07AA8YA/maxresdefault.jpg">
-<iframe src="https://www.youtube.com/embed/lk2n07AA8YA" allowfullscreen></iframe>
-<a class="unlock" href="https://www.paypal.com/paypalme/SynSkrift" target="_blank">Unlock & Download ($1)</a>
-</div>
-
-<div class="card">
-<img src="https://img.youtube.com/vi/ns1prw_mH-o/maxresdefault.jpg">
-<iframe src="https://www.youtube.com/embed/ns1prw_mH-o" allowfullscreen></iframe>
-<a class="unlock" href="https://www.paypal.com/paypalme/SynSkrift" target="_blank">Unlock & Download ($1)</a>
-</div>
-
-<div class="card">
-<img src="https://img.youtube.com/vi/g_WJIOmnb1E/maxresdefault.jpg">
-<iframe src="https://www.youtube.com/embed/g_WJIOmnb1E" allowfullscreen></iframe>
-<a class="unlock" href="https://www.paypal.com/paypalme/SynSkrift" target="_blank">Unlock & Download ($1)</a>
-</div>
-
-<div class="card">
-<img src="https://img.youtube.com/vi/J906gPXAIaE/maxresdefault.jpg">
-<iframe src="https://www.youtube.com/embed/J906gPXAIaE" allowfullscreen></iframe>
-<a class="unlock" href="https://www.paypal.com/paypalme/SynSkrift" target="_blank">Unlock & Download ($1)</a>
 </div>
 
 </div>
 
-<div class="ads">
-Google AdSense area
-</div>
+<section class="section">
 
-<div class="notice">
-After paying $1 you receive full usage rights for the beat.<br>
-You must credit: RawBeats Studio and optionally link this site or the YouTube channel.
-</div>
+<h2>About RawBeats Studio</h2>
 
-</div>
+<p>
+RawBeats Studio creates original instrumental beats for gaming videos,
+YouTube creators and background music projects.
+</p>
+
+</section>
+
+<section class="section">
+
+<h2>License</h2>
+
+<p>
+
+After supporting with $1 you may use the beat in:
+
+YouTube videos  
+games  
+streams  
+background music  
+
+You must credit: **Beat by RawBeats Studio**
+
+</p>
+
+</section>
+
+<section class="section">
+
+<h2>More Beats</h2>
+
+<a href="https://www.youtube.com/@RawBeatsStudio1">
+
+Visit the RawBeats Studio YouTube Channel
+
+</a>
+
+</section>
+
+<section class="section">
+
+<h2>Privacy Policy</h2>
+
+<p>
+
+This website may use cookies and Google AdSense to display advertisements.
+
+</p>
+
+</section>
 
 <footer>
-Visit the YouTube channel:<br>
-<a href="https://www.youtube.com/@RawBeatsStudio1" target="_blank">
-youtube.com/@RawBeatsStudio1
+
+RawBeats Studio
+
+<br><br>
+
+<a href="https://www.youtube.com/@RawBeatsStudio1">
+
+Official YouTube Channel
+
 </a>
+
 </footer>
 
 </body>
+
 </html>
 ```
