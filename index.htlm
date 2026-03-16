@@ -1,1 +1,137 @@
-```html <!DOCTYPE html> <html lang="da"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>RawBeats Studio</title> <style> body { font-family: Arial, sans-serif; background-color: #0f172a; color: white; text-align: center; margin: 0; padding: 20px; } header { background-color: #1e293b; padding: 20px; border-radius: 10px; box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4); margin-bottom: 20px; } h1, h2 { font-size: 2em; margin-bottom: 10px; } .beats-gallery { display: flex; flex-wrap: wrap; justify-content: center; margin-top: 20px; } .beat-card { background-color: #1e293b; margin: 15px; padding: 20px; border-radius: 8px; box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); width: 250px; text-align: center; } .paypal-button { background-color: #06b6d4; padding: 12px 25px; border-radius: 6px; font-size: 1.2em; color: white; text-decoration: none; display: inline-block; margin-top: 10px; } .paypal-button:hover { background-color: #0891b2; } .adsense-container { margin-top: 20px; padding: 10px; background-color: #1e293b; border-radius: 10px; box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); } footer { margin-top: 40px; font-size: 1.1em; } footer a { color: #06b6d4; text-decoration: none; } footer a:hover { text-decoration: underline; } </style> </head> <body> <header> <h1>Free RawBeats Studio</h1> <p>Original beats created by RawBeats Studio for background music, games, and other creative projects.</p> <p>Support me to create more beats. Download for free and use them on your YouTube, website, or other platforms.</p> </header> <!-- Google AdSense Area --> <div class="adsense-container"> <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8036688230923764" data-ad-slot="1234567890" data-ad-format="auto" data-full-width-responsive="true"></ins> <script>(adsbygoogle = window.adsbygoogle || []).push({});</script> </div> <div class="beats-gallery"> <!-- Repeat this block for each beat --> <div class="beat-card"> <h2>Beat 1</h2> <audio controls> <source src="path/to/beat1.mp3" type="audio/mp3"> Din browser understøtter ikke audio-tagget. </audio> <br> <a href="https://www.paypal.com/paypalme/SynSkrift" class="paypal-button" target="_blank">Support via PayPal</a> </div> <div class="beat-card"> <h2>Beat 2</h2> <audio controls> <source src="path/to/beat2.mp3" type="audio/mp3"> Din browser understøtter ikke audio-tagget. </audio> <br> <a href="https://www.paypal.com/paypalme/SynSkrift" class="paypal-button" target="_blank">Support via PayPal</a> </div> <!-- More beats can be added in similar fashion --> </div> <!-- Another AdSense Block --> <div class="adsense-container"> <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8036688230923764" data-ad-slot="1234567891" data-ad-format="auto" data-full-width-responsive="true"></ins> <script>(adsbygoogle = window.adsbygoogle || []).push({});</script> </div> <footer> <p>Thank you for supporting RawBeats Studio! <br> <a href="https://github.com/RawBeatsStudio" target="_blank">Visit our GitHub</a> </p> </footer> </body> </html> ``` ### Forklaring: 1. **Beat Gallery**: Der er plads til at tilføje flere beats. Skift `path/to/beat1.mp3` til de faktiske URL'er eller stier, hvor dine beats er gemt. Du kan tilføje flere beats ved at kopiere og indsætte `div class="beat-card"`-blokkene og ændre navnene og filerne. 2. **Google AdSense**: Koden indeholder to AdSense-sektioner. Erstat `ca-pub-8036688230923764` og `1234567890` med dine egne AdSense-id'er, som du får fra Google AdSense. 3. **PayPal Support**: Hvis du vil have folk til at støtte dig via PayPal, kan de gøre det ved at klikke på knappen, der linker til din PayPal-side. Du kan ændre PayPal-linket, hvis nødvendigt. ### Sådan bruger du koden: - **Erstat beat-filerne**: Udfyld med de faktiske URL'er til dine beats (enten fra en server eller direkte hosting). - **Opdater AdSense-koderne**: Erstat AdSense `data-ad-client` og `data-ad-slot` med dine egne. - **Opdater PayPal-link**: Hvis du har et andet PayPal-link, kan du opdatere det på knappen. Nu har du en professionel, simpel hjemmeside, hvor du kan vise dine beats, modtage støtte via PayPal, og vise Google Ads!
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RawBeats Studio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0f172a;
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background-color: #1e293b;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+            margin-bottom: 20px;
+        }
+        h1, h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        .beats-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .beat-card {
+            background-color: #1e293b;
+            margin: 15px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+            width: 250px;
+            text-align: center;
+        }
+        .paypal-button {
+            background-color: #06b6d4;
+            padding: 12px 25px;
+            border-radius: 6px;
+            font-size: 1.2em;
+            color: white;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        .paypal-button:hover {
+            background-color: #0891b2;
+        }
+        .adsense-container {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #1e293b;
+            border-radius: 10px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+        }
+        footer {
+            margin-top: 40px;
+            font-size: 1.1em;
+        }
+        footer a {
+            color: #06b6d4;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Free RawBeats Studio</h1>
+    <p>Original beats created by RawBeats Studio for background music, games, and other creative projects.</p>
+    <p>Support me to create more beats. Download for free and use them on your YouTube, website, or other platforms.</p>
+</header>
+
+<!-- Google AdSense Area -->
+<div class="adsense-container">
+    <ins class="adsbygoogle"
+        style="display:block"
+        data-ad-client="ca-pub-8036688230923764"
+        data-ad-slot="1234567890"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+
+<div class="beats-gallery">
+    <!-- Repeat this block for each beat -->
+    <div class="beat-card">
+        <h2>Beat 1</h2>
+        <audio controls>
+            <source src="path/to/beat1.mp3" type="audio/mp3">
+            Din browser understøtter ikke audio-tagget.
+        </audio>
+        <br>
+        <a href="https://www.paypal.com/paypalme/SynSkrift" class="paypal-button" target="_blank">Support via PayPal</a>
+    </div>
+
+    <div class="beat-card">
+        <h2>Beat 2</h2>
+        <audio controls>
+            <source src="path/to/beat2.mp3" type="audio/mp3">
+            Din browser understøtter ikke audio-tagget.
+        </audio>
+        <br>
+        <a href="https://www.paypal.com/paypalme/SynSkrift" class="paypal-button" target="_blank">Support via PayPal</a>
+    </div>
+
+    <!-- More beats can be added in similar fashion -->
+</div>
+
+<!-- Another AdSense Block -->
+<div class="adsense-container">
+    <ins class="adsbygoogle"
+        style="display:block"
+        data-ad-client="ca-pub-8036688230923764"
+        data-ad-slot="1234567891"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+
+<footer>
+    <p>Thank you for supporting RawBeats Studio! <br>
+        <a href="https://github.com/RawBeatsStudio" target="_blank">Visit our GitHub</a>
+    </p>
+</footer>
+
+</body>
+</html>
