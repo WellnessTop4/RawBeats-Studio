@@ -70,8 +70,21 @@
         footer a:hover {
             text-decoration: underline;
         }
-        .category-section {
-            margin-bottom: 40px;
+        .download-links {
+            display: none;
+            margin-top: 10px;
+        }
+        .download-button {
+            background-color: #34d399;
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-size: 1.1em;
+            color: white;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+        .download-button:hover {
+            background-color: #10b981;
         }
     </style>
 </head>
@@ -79,103 +92,95 @@
 <header>
     <h1>Free RawBeats Studio</h1>
     <p>Original beats created by RawBeats Studio for background music, games, and other creative projects.</p>
-    <p>Support me to create more beats. Download for free after supporting with $1 via PayPal, and use them on your YouTube, website, or other platforms. You will receive full rights to the beats once the payment is made, but you must credit RawBeats Studio in your descriptions and optionally link to my YouTube and website.</p>
+    <p>Support me with $1 via PayPal to unlock downloads with full rights. Always credit RawBeats Studio in your descriptions.</p>
 </header>
 
-<!-- Google AdSense Area -->
+<!-- Google AdSense -->
 <div class="adsense-container">
-    <ins class="adsbygoogle"
-        style="display:block"
-        data-ad-client="ca-pub-8036688230923764"
-        data-ad-slot="1234567890"
-        data-ad-format="auto"
-        data-full-width-responsive="true"></ins>
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8036688230923764" data-ad-slot="1234567890" data-ad-format="auto" data-full-width-responsive="true"></ins>
     <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
 
-<!-- Gaming Category -->
+<!-- GAMING BEATS -->
 <div class="category-section">
     <h2>Gaming Beats</h2>
     <div class="beats-gallery">
-        <!-- Example of a beat card -->
         <div class="beat-card">
             <h2>Beat 1</h2>
             <audio controls>
-                <source src="path/to/beat1.mp3" type="audio/mp3">
+                <source src="https://youtu.be/vUmDUakqkCA?si=rQQawlz5zKgoISVd" type="audio/mp3">
                 Din browser understøtter ikke audio-tagget.
             </audio>
-            <br>
-            <a href="https://www.paypal.com/paypalme/SynSkrift?amount=1" class="paypal-button" target="_blank">Support via PayPal</a>
-            <p>After supporting with $1, you can download the beat and use it freely. Don't forget to credit RawBeats Studio!</p>
+            <br><a href="https://www.paypal.com/paypalme/SynSkrift?amount=1" class="paypal-button" target="_blank">Pay $1 to Download</a>
+            <div class="download-links">
+                <a href="https://yourserver.com/beat1.mp3" class="download-button" target="_blank">Download Beat 1</a>
+            </div>
         </div>
-
-        <div class="beat-card">
-            <h2>Beat 2</h2>
-            <audio controls>
-                <source src="path/to/beat2.mp3" type="audio/mp3">
-                Din browser understøtter ikke audio-tagget.
-            </audio>
-            <br>
-            <a href="https://www.paypal.com/paypalme/SynSkrift?amount=1" class="paypal-button" target="_blank">Support via PayPal</a>
-            <p>After supporting with $1, you can download the beat and use it freely. Don't forget to credit RawBeats Studio!</p>
-        </div>
+        <!-- Repeat for other beats -->
     </div>
 </div>
 
-<!-- Chill Category -->
+<!-- CHILL BEATS -->
 <div class="category-section">
     <h2>Chill Beats</h2>
     <div class="beats-gallery">
-        <!-- Example of a beat card -->
         <div class="beat-card">
-            <h2>Beat 3</h2>
+            <h2>Beat 2</h2>
             <audio controls>
-                <source src="path/to/beat3.mp3" type="audio/mp3">
+                <source src="https://youtu.be/nGn4DyIEqj4?si=ViI4DwTtgRmsaESk" type="audio/mp3">
                 Din browser understøtter ikke audio-tagget.
             </audio>
-            <br>
-            <a href="https://www.paypal.com/paypalme/SynSkrift?amount=1" class="paypal-button" target="_blank">Support via PayPal</a>
-            <p>After supporting with $1, you can download the beat and use it freely. Don't forget to credit RawBeats Studio!</p>
+            <br><a href="https://www.paypal.com/paypalme/SynSkrift?amount=1" class="paypal-button" target="_blank">Pay $1 to Download</a>
+            <div class="download-links">
+                <a href="https://yourserver.com/beat2.mp3" class="download-button" target="_blank">Download Beat 2</a>
+            </div>
         </div>
-        <!-- More beats can be added here in the same format -->
+        <!-- Repeat for other beats -->
     </div>
 </div>
 
-<!-- Rap Category -->
+<!-- RAP BEATS -->
 <div class="category-section">
     <h2>Rap Beats</h2>
     <div class="beats-gallery">
-        <!-- Example of a beat card -->
         <div class="beat-card">
-            <h2>Beat 4</h2>
+            <h2>Beat 3</h2>
             <audio controls>
-                <source src="path/to/beat4.mp3" type="audio/mp3">
+                <source src="https://youtu.be/m6XNnmwW8yo?si=d2jiE25XjjFtRcfc" type="audio/mp3">
                 Din browser understøtter ikke audio-tagget.
             </audio>
-            <br>
-            <a href="https://www.paypal.com/paypalme/SynSkrift?amount=1" class="paypal-button" target="_blank">Support via PayPal</a>
-            <p>After supporting with $1, you can download the beat and use it freely. Don't forget to credit RawBeats Studio!</p>
+            <br><a href="https://www.paypal.com/paypalme/SynSkrift?amount=1" class="paypal-button" target="_blank">Pay $1 to Download</a>
+            <div class="download-links">
+                <a href="https://yourserver.com/beat3.mp3" class="download-button" target="_blank">Download Beat 3</a>
+            </div>
         </div>
-        <!-- More beats can be added here in the same format -->
+        <!-- Repeat for other beats -->
     </div>
 </div>
 
 <!-- Another AdSense Block -->
 <div class="adsense-container">
-    <ins class="adsbygoogle"
-        style="display:block"
-        data-ad-client="ca-pub-8036688230923764"
-        data-ad-slot="1234567891"
-        data-ad-format="auto"
-        data-full-width-responsive="true"></ins>
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8036688230923764" data-ad-slot="1234567891" data-ad-format="auto" data-full-width-responsive="true"></ins>
     <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
 
 <footer>
     <p>Thank you for supporting RawBeats Studio! <br>
-        <a href="https://github.com/RawBeatsStudio" target="_blank">Visit our GitHub</a> <br>
-        <a href="https://www.youtube.com/@RawBeatsStudio1" target="_blank">Visit our YouTube</a>
+    <a href="https://github.com/RawBeatsStudio" target="_blank">Visit our GitHub</a> | 
+    <a href="https://www.youtube.com/@RawBeatsStudio1" target="_blank">Visit our YouTube</a>
     </p>
 </footer>
+
+<script>
+    // Here you can place a script to display the download links after payment
+    const paypalLinks = document.querySelectorAll('.paypal-button');
+    paypalLinks.forEach(button => {
+        button.addEventListener('click', function() {
+            const beatCard = button.closest('.beat-card');
+            const downloadLink = beatCard.querySelector('.download-links');
+            downloadLink.style.display = 'block'; // Show download link after PayPal payment
+        });
+    });
+</script>
 </body>
 </html>
